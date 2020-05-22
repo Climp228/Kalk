@@ -1,0 +1,60 @@
+button{
+    width: 50px;
+    height: 50px;
+}
+
+body{
+    margin: auto;
+    background-color: grey;
+}
+
+.start{
+    margin: auto;
+}
+
+.start > h1{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 150px;
+}
+
+.inp1{
+    margin-left: 970px;
+    text-align: center;
+    background-color: lightseagreen;
+}
+
+.inp2{
+    margin-left: 970px;
+    text-align: center;
+    background-color: lightseagreen;
+}
+
+.plus{
+    border-radius: 5px;
+    margin-left: 900px;
+    text-align: center;
+    width: 70px;
+    background-color: lawngreen;
+}
+
+.minus{
+    border-radius: 5px;
+    text-align: center;
+    width: 70px;
+    background-color: lawngreen;
+}
+
+.mnoj{
+    border-radius: 5px;
+    text-align: center;
+    width: 70px;
+    background-color: lawngreen;
+}
+
+.dil{
+    border-radius: 5px;
+    text-align: center;
+    width: 70px;
+    background-color: lawngreen;
+}

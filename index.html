@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <script>
+class Calc{
+  constructor(firstArg, secondArg, name = "Calc") {
+    this.firstArg = firstArg;
+    this.secondArg = secondArg;
+    this.name = name;
+  }
+add(){
+  return this.firstArg + this.secondArg;
+}
+minusp(){
+  return this.firstArg - this.secondArg;
+}
+mno(){
+  return this.firstArg * this.secondArg;
+}
+dili(){
+  if(this.secondArg != 0){
+    return this.firstArg / this.secondArg;
+  }else{
+    alert("Error");
+  }
+  
+}
+}
+
+  </script>
+  <div class="start">
+    <h1>Калькулятор</h1>
+  </div>
+
+  <input type="text" id="pol1" class="inp1">
+  <br>
+  <br>
+  <br>
+  <input type="text" id="pol2" class="inp2"> 
+  <br>
+  <br>
+  <button name="plus" id="plus" class="plus">+</button>
+  <button name="minus" id="minus" class="minus">-</button>
+  <button name="mno" id="mno" class="mnoj">*</button>
+  <button name="dil" id="dil" class="dil">/</button>
+  <script>
+    let calc = new Calc(0,1);
+    plus.onclick = function(){
+      let first = parseInt(pol1.value);
+      let second =  parseInt(pol2.value);
+      calc.firstArg = first;
+      calc.secondArg = second;
+      alert(calc.add());
+    }
+    minus.onclick = function(){
+      let first = parseInt(pol1.value);
+      let second =  parseInt(pol2.value);
+      calc.firstArg = first;
+      calc.secondArg = second;
+      alert(calc.minusp());
+    }
+    mno.onclick = function(){
+      let first = parseInt(pol1.value);
+      let second =  parseInt(pol2.value);
+      calc.firstArg = first;
+      calc.secondArg = second;
+      alert(calc.mno());
+    }
+    dil.onclick = function(){
+      let first = parseInt(pol1.value);
+      let second =  parseInt(pol2.value);
+      calc.firstArg = first;
+      calc.secondArg = second;
+      alert(calc.dili());
+    }
+  </script>
+</body>
+</html>
